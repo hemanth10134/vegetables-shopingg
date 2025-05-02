@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Page</title>
+    <link rel="stylesheet" type="text/css" href="paymentpage.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Payment Information </h1>
+        <form id="payment-form">
+            <!-- Vouchers Available -->
+            <h2 style="color:#445D48">Vouchers Available</h2>
+            <table>
+                <tr>
+                    <th>Voucher Code</th>
+                    <th>Description</th>
+                    <th>View</th>
+                </tr>
+                <tr>
+                    <td>VOUCHER123</td>
+                    <td>20% off on fruits</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+                <!-- Add more voucher rows as needed -->
+            </table>
+
+            <!-- Charges and Order Summary -->
+            <h2 style="color:#445D48">Charges and Order Summary</h2>
+            <table>
+                <tr>
+                    <td>Basket Value</td>
+                    <td>₹50.00</td>
+                </tr>
+                <tr>
+                    <td>Delivery Charge</td>
+                    <td>₹5.00</td>
+                </tr>
+                <tr>
+                    <td>Handling Charge</td>
+                    <td>₹2.00</td>
+                </tr>
+                <tr>
+                    <td>Redeem With</td>
+                    <td>₹10.00</td>
+                </tr>
+                <tr>
+                    <td>Used from Wallet</td>
+                    <td>₹8.00</td>
+                </tr>
+                <tr>
+                    <td>Total Amount Payable</td>
+                    <td>₹39.00</td>
+                </tr>
+                <tr>
+                    <td>Total Savings</td>
+                    <td>₹13.00</td>
+                </tr>
+            </table>
+
+            <p></p> <!-- Create a space -->
+
+            <!-- Payment Options -->
+            <h2 style="color:#445D48"> Payment Options</h2>
+
+            <div class="payment-options">
+              <td> <input type="Radio" name="payment-options" value ="Other Payment Options">Other Payment Options<br>
+                <input type="Radio" name="payment-options" value ="UPI Apps">UPI Apps<br>
+                <input type="Radio" name="payment-options" value ="Credit/Debit Card>Credit/Debit Card">Credit/Debit Card>Credit/Debit Card<br>
+                <input type="Radio" name="payment-options" value ="Wallets">Wallets<br>
+                <input type="Radio" name="payment-options" value ="Net Banking">Net Banking<br> </td>
+      
+            </div>
+
+            <!-- Shipping Address -->
+            <h2 style="color:#445D48">Shipping Address</h2>
+            <div class="address">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="address">Address:</label><br>
+                <textarea>  </textarea>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+                <label for="PIN">PIN Code:</label>
+                <input type="text" id="PIN" name="PIN" required>
+            </div>
+
+            <!-- Edit and Add New Address Options -->
+            <div class="address-options">
+                <button type="button" id="edit-address">Edit Address</button>
+                <button type="button" id="add-address">Add New Address</button>
+            </div>
+
+            <!-- Arrival Estimate -->
+            <h2 style="color:#445D48">Arrival Estimate</h2>
+            <p>Your order will arrive within 3-5 business days.</p>
+
+            <!-- Place Order and Pay Button -->
+            <button type="submit" id="place-order-button">Place Order and Pay</button>
+        </form>
+    </div>
+</body>
+</html>
